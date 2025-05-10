@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ventora Services - Get in Touch</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>VENTORA SERVICES</h1>
+        <p>Administrative services for your needs</p>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="get-in-touch.html">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Get in Touch</h2>
+      <form action="https://formspree.io/f/movdlzke" method="POST" class="contact-form">
+        <label>Work Email*</label>
+        <input type="email" name="email" required>
+
+        <label>Company Name*</label>
+        <input type="text" name="company" required>
+
+        <label>First Name*</label>
+        <input type="text" name="first_name" required>
+
+        <label>Last Name*</label>
+        <input type="text" name="last_name" required>
+
+        <label>Country*</label>
+        <input type="text" name="country" required>
+
+        <label>Interest*</label>
+        <input type="text" name="interest" required>
+
+        <label>Add details of what we can help you with*</label>
+        <textarea name="details" rows="5" required></textarea>
+
+        <label class="checkbox">
+          <input type="checkbox" name="privacy_policy" required>
+          I acknowledge that I have read, understood, and agreed to Ventora's Privacy Policy, Terms & Conditions, and Cookie Policy.
+        </label>
+
+        <label class="checkbox">
+          <input type="checkbox" name="marketing_opt_in">
+          Yes, I would like to receive marketing communications.
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="contact-info" style="margin-top: 20px;">
+        <p><strong>Contact Us</strong></p>
+        <p>Email: <a href="mailto:info@ventoraservices.com">info@ventoraservices.com</a></p>
+        <p>Phone: +1 (307) 461-5151</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ventora Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
